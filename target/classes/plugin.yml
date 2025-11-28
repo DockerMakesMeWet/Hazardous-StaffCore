@@ -1,0 +1,56 @@
+name: Hazardous-Staffcore
+version: '1.0-SNAPSHOT'
+main: me.pvpclub.hazardousStaffcore.HazardousStaffcore
+api-version: '1.21'
+commands:
+  sc:
+    description: Staff chat
+  staffchat:
+    description: Staff chat
+  dc:
+    description: Dev chat
+  devchat:
+    description: Dev chat
+  adminchat:
+    description: Admin chat
+  managementchat:
+    description: Management chat
+  donatorchat:
+    description: Donator chat
+  vanish:
+    description: Toggle vanish
+    aliases: [v]
+  freeze:
+    description: Freeze a player
+  unfreeze:
+    description: Unfreeze a player
+  staffmode:
+    description: Toggle staff mode
+  staffcore:
+    description: Main staffcore command
+
+permissions:
+  staffcore.*:
+    description: All staffcore permissions
+    children:
+      staffcore.vanish: true
+      staffcore.vanish.level1: true
+      staffcore.vanish.level2: true
+      staffcore.vanish.level3: true
+      staffcore.vanish.level4: true
+      staffcore.vanish.level5: true
+      staffcore.vanish.see.level1: true
+      staffcore.vanish.see.level2: true
+      staffcore.vanish.see.level3: true
+      staffcore.vanish.see.level4: true
+      staffcore.vanish.see.level5: true
+      staffcore.freeze: true
+      staffcore.freeze.notify: true
+      staffcore.staffmode: true
+      staffcore.logs: true
+      staffcore.creativelogs: true
+      staffcore.staffchat: true
+      staffcore.devchat: true
+      staffcore.adminchat: true
+      staffcore.managementchat: true
+      staffcore.donatorchat: true

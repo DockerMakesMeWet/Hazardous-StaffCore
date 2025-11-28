@@ -1,0 +1,24 @@
+mysql:
+  host: "localhost"
+  port: 3306
+  database: "staffcore"
+  username: "root"
+  password: "password"
+
+server:
+  name: "Lobby-1"
+
+vanish:
+  max-level: 5
+  fake-quit-message: "&e{player} left the game"
+  silent-chest-open: true
+
+freeze:
+  teleport-up: true
+  title: '§c§lFROZEN'
+  subtitle: '§eYou have been frozen! Do not leave or you will be punished!'
+
+logging:
+  log-all-commands: true
+  log-gamemode-changes: true
+  log-creative-items: true

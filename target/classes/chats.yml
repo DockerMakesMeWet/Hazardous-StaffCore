@@ -1,0 +1,30 @@
+chats:
+  staffchat:
+    name: Staff Chat
+    permission: staffcore.staffchat
+    prefix: '§c§l[STAFF]'
+    format: '{prefix} §7{player}§f: {message}'
+
+  devchat:
+    name: Dev Chat
+    permission: staffcore.devchat
+    prefix: '§3§l[DEV]'
+    format: '{prefix} §7{player}§f: {message}'
+
+  adminchat:
+    name: Admin Chat
+    permission: staffcore.adminchat
+    prefix: '§4§l[ADMIN]'
+    format: '{prefix} §7{player}§f: {message}'
+
+  managementchat:
+    name: Management Chat
+    permission: staffcore.managementchat
+    prefix: '§5§l[MANAGEMENT]'
+    format: '{prefix} §7{player}§f: {message}'
+
+  donatorchat:
+    name: Donator Chat
+    permission: staffcore.donatorchat
+    prefix: '§6§l[DONATOR]'
+    format: '{prefix} §7{player}§f: {message}'
