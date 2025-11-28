@@ -90,6 +90,7 @@ public class HazardousStaffcore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new StaffModeListener(this), this);
         getServer().getPluginManager().registerEvents(new CommandLogListener(this), this);
         getServer().getPluginManager().registerEvents(new CreativeLogListener(this), this);
+        getServer().getPluginManager().registerEvents(new ChatListener(this), this);
     }
 
     public static HazardousStaffcore getInstance() {

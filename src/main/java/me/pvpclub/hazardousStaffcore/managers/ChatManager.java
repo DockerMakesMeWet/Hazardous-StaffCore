@@ -45,10 +45,15 @@ public class ChatManager {
 
     public void toggleChat(Player player, String channelKey) {
         UUID uuid = player.getUniqueId();
-        if (activeChats.containsKey(uuid) && activeChats.get(uuid).equals(channelKey)) {
+        String currentChannel = activeChats.get(uuid);
+
+        if (currentChannel != null && currentChannel.equals(channelKey)) {
             activeChats.remove(uuid);
-            player.sendMessage("§cYou have left " + channels.get(channelKey).getName() + ".");
+            player.sendMessage("§cYou have left " + channels.get(channelKey).getName() + " and returned to public chat.");
         } else {
+            if (currentChannel != null) {
+                player.sendMessage("§cYou have left " + channels.get(currentChannel).getName() + ".");
+            }
             activeChats.put(uuid, channelKey);
             player.sendMessage("§aYou are now chatting in " + channels.get(channelKey).getName() + ".");
         }
@@ -56,6 +61,10 @@ public class ChatManager {
 
     public String getActiveChat(UUID uuid) {
         return activeChats.get(uuid);
+    }
+
+    public void removeFromChat(UUID uuid) {
+        activeChats.remove(uuid);
     }
 
     public void sendMessage(Player sender, String channelKey, String message) {

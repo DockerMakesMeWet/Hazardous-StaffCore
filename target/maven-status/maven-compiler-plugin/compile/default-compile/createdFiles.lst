@@ -14,6 +14,7 @@ me\pvpclub\hazardousStaffcore\commands\VanishCommand.class
 me\pvpclub\hazardousStaffcore\managers\LogManager.class
 me\pvpclub\hazardousStaffcore\commands\StaffChatCommand.class
 me\pvpclub\hazardousStaffcore\managers\ChatManager.class
+me\pvpclub\hazardousStaffcore\listeners\ChatListener.class
 me\pvpclub\hazardousStaffcore\listeners\FreezeListener.class
 me\pvpclub\hazardousStaffcore\managers\ChatManager$ChatChannel.class
 me\pvpclub\hazardousStaffcore\commands\FreezeCommand.class

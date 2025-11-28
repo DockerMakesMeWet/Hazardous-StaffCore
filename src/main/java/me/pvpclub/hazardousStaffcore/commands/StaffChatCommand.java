@@ -40,14 +40,7 @@ public class StaffChatCommand implements CommandExecutor, TabCompleter {
             return true;
         }
 
-        if (args.length == 0) {
-            plugin.getChatManager().toggleChat(player, channelKey);
-            return true;
-        }
-
-        String message = String.join(" ", args);
-        plugin.getChatManager().sendMessage(player, channelKey, message);
-
+        plugin.getChatManager().toggleChat(player, channelKey);
         return true;
     }
 
